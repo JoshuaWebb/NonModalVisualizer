@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AsyncDebuggerVisualizerTest.Visualizer
+namespace AsyncDebuggerVisualizerTest.Visualizer.Model
 {
     [Serializable]
     public class Message

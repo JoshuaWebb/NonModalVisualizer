@@ -8,6 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using AsyncDebuggerVisualizerTest.Visualizer.Model;
 
 namespace AsyncDebuggerVisualizerTest.Visualizer
 {
@@ -21,7 +22,6 @@ namespace AsyncDebuggerVisualizerTest.Visualizer
         {
             Form = form;
 
-            // TODO: coordinate ports somehow to allow multiple concurrent instances
             TcpListener = new TcpListener(IPAddress.Loopback, 0);
             ListenThread = new Thread(ListenForClients);
             ListenThread.Start();
